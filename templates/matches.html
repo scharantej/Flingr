@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Matches</title>
+</head>
+<body>
+<h1>Matches</h1>
+<p>
+Here is a list of your potential matches:
+</p>
+<ul>
+{% for match in matches %}
+<li>{{ match.match.username }} (compatibility score: {{ match.compatibility_score }})</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
